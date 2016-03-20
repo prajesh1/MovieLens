@@ -39,7 +39,7 @@ public class UsersOnMyAge {
 	        for (IntWritable val : values) {
 	            sum += val.get();
 	        }
-	        if(key.equals(25))
+	        if(key.get()==25)
 	        context.write(key, new IntWritable(sum));
 	    }
 	 }     
